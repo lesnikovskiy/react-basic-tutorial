@@ -11,7 +11,6 @@ function App() {
 
   function handleSelect(selectedButton) {
     setSelectedTopic(selectedButton);
-    console.log(selectedTopic);
   }
 
   return (
@@ -22,9 +21,10 @@ function App() {
         <section id="core-concepts">
           <h2>Core Concepts</h2>
           <ul>
-            {CORE_CONCEPTS.map((concept) => (
-              <CoreConcept key={concept.title} {...concept} />
-            ))}
+            {CORE_CONCEPTS &&
+              CORE_CONCEPTS.map((concept) => (
+                <CoreConcept key={concept.title} {...concept} />
+              ))}
           </ul>
         </section>
         <section id="examples">
