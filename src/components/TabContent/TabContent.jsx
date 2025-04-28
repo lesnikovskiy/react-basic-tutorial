@@ -1,4 +1,4 @@
-import { EXAMPLES } from "../../examples_data.js";
+import { EXAMPLES } from '../../examples_data.js';
 
 export default function TabContent({ selectedTopic }) {
   return (
